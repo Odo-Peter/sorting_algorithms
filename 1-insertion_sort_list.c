@@ -107,7 +107,7 @@ void insertion_sort_list(listint_t **list)
 		cursor = swap_first(list);
 		if (cursor->next != NULL)
 			contd = 1;
-		cont = check_backward(&cursor, list);
+		contd = check_backward(&cursor, list);
 		if (cursor->prev == NULL)
 		{
 			*list = cursor;
